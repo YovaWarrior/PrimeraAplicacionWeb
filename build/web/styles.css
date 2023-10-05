@@ -1,0 +1,121 @@
+/* Agrega estilos personalizados en style.css */
+body {
+    background-color: #ffea00; /* Fondo amarillo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cambiar el color de fondo del Navbar */
+/* Estilos del Navbar */
+.navbar {
+    background-color: #333; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin: 0 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #ff5722; /* Color de texto naranja al pasar el mouse */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #ff5722; /* Color de fondo naranja al pasar el mouse */
+}
+
+/* Estilos para el ícono del menú desplegable */
+.dropdown-toggle::after {
+    content: "▼"; /* Puedes cambiar el icono aquí */
+    margin-left: 5px;
+}
+/* Estilos para el formulario */
+.container {
+    background-color: #f7f7f7; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+h2 {
+    font-size: 24px;
+    color: #333; /* Texto gris oscuro */
+}
+
+.form-label {
+    font-weight: bold;
+    color: #555; /* Texto gris más claro */
+}
+
+.form-control {
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px;
+    color: #333; /* Texto gris oscuro */
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #ff5722; /* Fondo naranja */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Texto blanco */
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.btn-primary:hover {
+    background-color: #ff281b; /* Naranja más oscuro al pasar el mouse */
+}

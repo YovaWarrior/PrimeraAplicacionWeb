@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Alumnos</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="#">Mi Aplicación</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item active">
+                    <a class="navbar-link" href="#">Inicio</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#">Registro de Alumnos</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#">Contacto</a>
+                </li>
+            </ul>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#">Iniciar Sesión</a>
+                </li>
+                <li class="navbar-item dropdown">
+                    <a class="navbar-link dropdown-toggle" href="#" role="button">Opciones</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Perfil</a></li>
+                        <li class="dropdown-item"><a href="#">Configuración</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="#">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="container mt-4">
+        <h1>Registro de Alumnos</h1>
+        <!-- Formulario de registro de alumnos irá aquí -->
+        <form>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+    <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" name="apellido" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
+    </div>
+
+   
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const apellido = document.getElementById("apellido").value;
+            const email = document.getElementById("email").value;
+
+            if (!nombre || !apellido || !email) {
+                alert("Por favor, complete todos los campos.");
+                return;
+            }
+
+            
+            // Por ahora, solo mostraremos una alerta con los datos.
+            alert(`¡Registro exitoso!\nNombre: ${nombre}\nApellido: ${apellido}\nEmail: ${email}`);
+        });
+    });
+</script>
+</html>
